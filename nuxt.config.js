@@ -23,14 +23,26 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/style.css'],
+  css: [
+    '~/assets/style.css',
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/fontawesome.js'
   ],
+  fontawesome: {
+    component: 'Fa',
+    suffix: false,
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 
   /*
   ** Auto import components
@@ -42,8 +54,6 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
     '@nuxt/postcss8'
   ],
 
