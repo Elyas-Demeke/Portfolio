@@ -56,6 +56,71 @@
         >
           Candles</nuxt-link
         >
+        <nuxt-link
+          @click.native="activeSection = 'candles'"
+          :class="{ active: activeSection === 'candles' }"
+          to="/candles"
+          class="
+            text-center
+            py-3
+            text-opacity-50
+            border-b border-white border-opacity-10
+          "
+        >
+          Books</nuxt-link
+        >
+        <nuxt-link
+          @click.native="activeSection = 'candles'"
+          :class="{ active: activeSection === 'candles' }"
+          to="/candles"
+          class="
+            text-center
+            py-3
+            text-opacity-50
+            border-b border-white border-opacity-10
+          "
+        >
+          Items</nuxt-link
+        >
+        <nuxt-link
+          @click.native="activeSection = 'candles'"
+          :class="{ active: activeSection === 'candles' }"
+          to="/candles"
+          class="
+            text-center
+            py-3
+            text-opacity-50
+            border-b border-white border-opacity-10
+          "
+        >
+          Cloths</nuxt-link
+        >
+        <nuxt-link
+          @click.native="activeSection = 'candles'"
+          :class="{ active: activeSection === 'candles' }"
+          to="/candles"
+          class="
+            text-center
+            py-3
+            text-opacity-50
+            border-b border-white border-opacity-10
+          "
+        >
+          Joggers</nuxt-link
+        >
+        <nuxt-link
+          @click.native="activeSection = 'candles'"
+          :class="{ active: activeSection === 'candles' }"
+          to="/candles"
+          class="
+            text-center
+            py-3
+            text-opacity-50
+            border-b border-white border-opacity-10
+          "
+        >
+          Balls</nuxt-link
+        >
       </div>
     </aside>
   <div class="container">
