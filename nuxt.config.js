@@ -25,24 +25,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/style.css',
-    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
-  plugins: [
-    '~/plugins/fontawesome.js'
-  ],
-  fontawesome: {
-    component: 'Fa',
-    suffix: false,
-    icons: {
-      solid: true,
-      brands: true,
-    },
-  },
 
   /*
   ** Auto import components
@@ -68,9 +56,6 @@ export default {
   /*
   ** Server Middleware
   */
-  serverMiddleware: {
-    '/api': '~/api'
-  },
 
   /*
   ** For deployment you might want to edit host and port
