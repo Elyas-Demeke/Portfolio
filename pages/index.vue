@@ -295,13 +295,14 @@
 export default {
   data() {
     return {
-      activeSection: "blog",
+      activeSection: "cars",
       showSideNavBar: false,
     };
   },
   created() {
     if (this.$route.path === "/") {
-      this.activeSection = "blog";
+      this.$router.push('/cars')
+      this.activeSection = "cars";
     } else {
       this.activeSection = this.$route.path.slice(1);
     }
