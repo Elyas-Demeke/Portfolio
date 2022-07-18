@@ -1,7 +1,7 @@
 <template>
 <div>
     <!-- side desktop view -->
-    <aside class="transition duration-300 sticky md:w-1/5 lg:w-1/6 xl:w-1/12 h-full top-0 bg-white md:flex md:flex-col hidden md:overflow-y-auto z-50"
+    <aside class="transition duration-300 sticky md:w-1/5 lg:w-1/6 xl:w-2/12 h-full top-0 bg-white md:flex md:flex-col hidden md:overflow-y-auto z-50"
     :class="showSideNavBar ? 'translate-x-0 ' : '-translate-x-96 '">
       <!-- Logo -->
       <div class="flex flex-col justify-center items-center mt-4">
@@ -57,9 +57,7 @@
           Candles</nuxt-link
         >
         <nuxt-link
-          @click.native="activeSection = 'candles'"
-          :class="{ active: activeSection === 'candles' }"
-          to="/candles"
+          to="#"
           class="
             text-center
             py-3
@@ -70,9 +68,7 @@
           Books</nuxt-link
         >
         <nuxt-link
-          @click.native="activeSection = 'candles'"
-          :class="{ active: activeSection === 'candles' }"
-          to="/candles"
+          to="#"
           class="
             text-center
             py-3
@@ -83,9 +79,7 @@
           Items</nuxt-link
         >
         <nuxt-link
-          @click.native="activeSection = 'candles'"
-          :class="{ active: activeSection === 'candles' }"
-          to="/candles"
+          to="#"
           class="
             text-center
             py-3
@@ -96,9 +90,7 @@
           Cloths</nuxt-link
         >
         <nuxt-link
-          @click.native="activeSection = 'candles'"
-          :class="{ active: activeSection === 'candles' }"
-          to="/candles"
+          to="#"
           class="
             text-center
             py-3
@@ -109,9 +101,7 @@
           Joggers</nuxt-link
         >
         <nuxt-link
-          @click.native="activeSection = 'candles'"
-          :class="{ active: activeSection === 'candles' }"
-          to="/candles"
+          to="#"
           class="
             text-center
             py-3
@@ -263,11 +253,11 @@
     </aside>
     <div class="flex flex-col w-full"  @click="showSideNavBar = false" >
       <!-- Nav -->
-      <div class="flex w-full h-20 justify-between p-4">
+      <div class="flex w-full h-20 justify-between p-4 pl-32">
         <div class="border rounded-3xl relative h-4/5 border-gray-600 flex justify-center items-center">          
-          <div class="w-5 h-5">
+          <div class="w-5 h-5 ml-2">
             <img class="w-full h-full" src="../assets/search icon.svg" alt="">
-          </div><input type="text" class="w-4/5 h-4/5 self-center outline-none"></div>
+          </div><input type="text" placeholder="Search products" class="w-3/5 h-4/5 ml-4 self-center outline-none"></div>
         <div class="flex gap-x-4 justify-center items-center">
           <Select class=" h-2/3">
             <option value="English">English</option>
@@ -331,6 +321,6 @@ export default {
   @apply min-w-full  min-h-screen  flex flex-col md:flex-row overflow-y-clip absolute top-0 left-0;/* md:overflow-x-hidden overflow-x-scroll;*/
 }
 .active {
-  @apply text-teal-300 font-bold;
+  @apply   bg-gray-200;
 }
 </style>
