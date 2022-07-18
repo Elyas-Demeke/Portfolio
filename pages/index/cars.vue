@@ -24,9 +24,9 @@
         <hr class="w-full mt-8">
         <div class="flex flex-wrap w-full mt-8 gap-y-4">
             <!-- card -->
-            <div class="flex flex-col w-56 ">
+            <div class="flex flex-col w-56 " v-for="product in products" :key="product.id">
                 <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
+                    <img :src="product.imgSrc" alt="" class="w-full h-auto overflow-clip">
                 </div>
                 <!-- Slider indicators -->
                 <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
@@ -36,105 +36,8 @@
                     <div class="border w-3 h-3 rounded-full bg-white"></div>
                     <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
                 </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
-            </div>
-            <div class="flex flex-col w-56 ">
-                <div class="w-50 h-50 overflow-clip mb-6 ml-4">
-                    <img src="https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80" alt="" class="w-full h-auto overflow-clip">
-                </div>
-                <!-- Slider indicators -->
-                <div class="flex w-50 justify-center gap-x-2 mb-2 ml-2">
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-gray-600"></div>
-                    <div class="border w-3 h-3 rounded-full bg-white"></div>
-                    <div class="border w-3 h-3 rounded-full bg-yellow-500"></div>
-                </div>
-                <h1 class="ml-4 mb-4 place-self-center">Lamborghini</h1>
-                <h1>$125,000</h1>
-
+                <h1 class="ml-4 mb-4 place-self-center">{{product.productName}}</h1>
+                <h1>${{product.price}}</h1>
             </div>
         </div>
         
@@ -143,7 +46,54 @@
 
 <script>
     export default {
-        
+        data(){
+            return{
+                products: [
+                    {
+                        id: '1',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '2',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '3',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '4',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '5',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '6',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                    {
+                        id: '7',
+                        imgSrc: 'https://images.unsplash.com/photo-1542228262-3d663b306a53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80',
+                        productName: 'Lamborghini',
+                        price: 125000,
+                    },
+                ]
+            }
+        }
     }
 </script>
 
